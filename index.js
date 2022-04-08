@@ -7,8 +7,10 @@
         AWS_SECRET_ACCESS_KEY
         NPM_CONFIG_PRODUCTION
  */
-// require('dotenv').config({ path: '.env_flb' });
 let Gun = require('gun');
+
+// this is a copy-paste from gun/lib/utils.js
+// because it isn't working otherwise :(
 ;(function(){
 	var u;
 	if(''+u == typeof Gun){ return }
