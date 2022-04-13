@@ -1,0 +1,15 @@
+FROM node:alpine
+
+WORKDIR /usr/src/app
+COPY package.json package-lock.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+
+# complete down here
+ENV AWS_ACCESS_KEY_ID=
+ENV AWS_S3_BUCKET=
+ENV AWS_SECRET_ACCESS_KEY=
+ENV PORT=8080
+
+CMD [ "node", "index.js" ]
