@@ -1,0 +1,12 @@
+name: relay-test1
+image: okteto/node:16
+command:
+  - npm install
+  - node index.js
+workdir: /usr/src/app
+# envFiles:
+#   - .env
+environment:
+  PORT:
+persistentVolume:
+  enabled: false
