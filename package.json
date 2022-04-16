@@ -10,7 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "2.955.0",
+    "bullet-catcher": "github:zrrrzzt/bullet-catcher",
     "dotenv": "^16.0.0",
-    "gun": "^0.2020.1236"
+    "gun": "^0.2020.1235"
   }
 }
